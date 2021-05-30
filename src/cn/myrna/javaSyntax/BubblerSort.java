@@ -1,4 +1,4 @@
-package cn.myrna.java;
+package cn.myrna.javaSyntax;
 
 import java.util.Arrays;
 

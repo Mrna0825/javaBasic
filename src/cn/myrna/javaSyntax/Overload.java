@@ -1,4 +1,4 @@
-package cn.myrna.java;
+package cn.myrna.javaSyntax;
 
 public class Overload {
 
