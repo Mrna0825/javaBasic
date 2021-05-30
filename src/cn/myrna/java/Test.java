@@ -1,6 +1,6 @@
 package cn.myrna.java;
 
-public class test {
+public class Test {
 
     public static void printLn_Method(){
         for (int i = 0; i < 5; i++) {
