@@ -18,5 +18,6 @@ public class Test2 {
         int[] arr2 = new int[5];
         arr2[0] = 1;
         arr2[1] = 2;
+        arr2[2] = 3;
     }
 }
