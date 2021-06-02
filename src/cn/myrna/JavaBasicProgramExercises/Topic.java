@@ -1,14 +1,16 @@
 package cn.myrna.JavaBasicProgramExercises;
 
+import javax.sound.midi.Soundbank;
 import java.util.Random;
 
 public class Topic {
 
     public static void main(String[] args) {
-        TopicSeven();
+        TopicEight();
+
     }
 
-    //题目1：打印出1-100之间所有不是7的倍数和不包含7的数字，并求和
+    //打印出1-100之间所有不是7的倍数和不包含7的数字，并求和
     public static void TopicOne(){
         int sum = 0;
         for (int i = 1; i <= 100; i++) {
@@ -22,7 +24,7 @@ public class Topic {
         System.out.println("总和"+sum);
     }
 
-    //题目二：有一个有钱的神经病，他往银行里存钱，
+    //有一个有钱的神经病，他往银行里存钱，
     //第一天存1元,以后每天比前一天多存50%，完成下列计算任务
     //1)他存到第几天，当天存的钱会超过10元
     //2)一个月（30天）后，他总共存了多少钱
@@ -154,5 +156,19 @@ public class Topic {
             total = (total+1)*2;//反推猴子吐出来的桃子.....
             day--;
          }
+    }
+
+    //将一个正整数分解质因数。例如：输入 90，打印出 90=2*3*3*5。
+    static void TopicEight(){
+        Random random = new Random();
+        int num = random.nextInt(100);
+        System.out.print(num+"=");
+        for (int i = 2; i < num; i++) {
+            while (num%i==0){
+                num /= i;
+                System.out.print(i+"*");
+            }
+        }
+        System.out.println(num);
     }
 }
