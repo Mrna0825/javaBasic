@@ -2,6 +2,7 @@ package cn.myrna.ListNode;
 
 public class ListNode_Test {
     public static void main(String[] args) {
+        //创建数组
         int[] arr = new int[]{1,2,3,4,5,6,6,7,8,4,2,31,12,5};
 
         //新建链表对象再传入一个结点arr[0]

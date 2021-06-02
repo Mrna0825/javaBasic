@@ -1,9 +1,14 @@
 package cn.myrna.ListNode;
 //创建一个链表的类
 public class ListNode {
-    int val;//数值 data
-    ListNode next;//结点 node
 
+    //数值 data
+    int val;
+
+    //结点 node
+    ListNode next;
+
+    //有参方法
     ListNode(int x){
         val = x;
     }
@@ -26,7 +31,7 @@ public class ListNode {
     public void print(){
         System.out.print(this.val);
         if(this.next != null){
-            System.out.print("-->");
+            System.out.print("、");
             this.next.print();
         }
     }
